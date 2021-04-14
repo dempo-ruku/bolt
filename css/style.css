@@ -32,6 +32,7 @@
   padding: 14px 12px;
   text-decoration: none;
   transition: 0.3s;
+  font-family: 'Lato';
 }
 
 .contact:hover {
@@ -50,13 +51,16 @@
 .theme__inner {
   padding: 250px 0 250px 0;
 }
+
 .theme h1 {
+  font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
 
 .theme h2 {
+  font-family: 'Lato';
   margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
@@ -71,21 +75,23 @@
 }
 
 .iphone__inner__left {
-  padding-top: 50px;
+  padding: 50px 0 0 50px;
 }
 
 .iphone__inner__right {
-  margin-left: 100px;
+  margin-left: 180px;
   text-align: center;
   color: #fff;
 }
 
 .iphone h3 {
+  font-family: 'Raleway';
   font-size: 24px;
   padding: 70px 0 35px 0;
 }
 
 .iphone p {
+  font-family: 'Lato';
   font-size: 20px;
   line-height: 30px;
 }
@@ -96,6 +102,7 @@
 }
 
 .inner h4 {
+  font-family: 'Raleway';
   text-align: center;
   margin: 60px 0 40px 0;
   font-size: 24px;
@@ -107,7 +114,7 @@
   display: block;
 }
 
-.article__img img{
+.article__img {
   margin-right: 100px;
   margin-bottom: 80px;
   float: left;
@@ -115,12 +122,12 @@
   opacity: 0.7;
 }
 
-.article__img img:hover {
-  opacity: 1.0;
+.article__img:nth-child(3n) {
+  margin-right: 0;
 }
 
-.article__img img:nth-child(3n) {
-  margin-right: 0;
+.article__img:hover {
+  opacity: 1.0;
 }
 
 .lorem {
@@ -132,12 +139,14 @@
 }
 
 .lorem p {
+  font-family: 'Lato';
   padding: 0 90px 70px 0;
   text-align: center;
   color: #333;
 }
 
-.lorem a {
+.Email {
+  font-family: 'Lato';
   font-size: 12px;
   padding: 14px 20px;
   background-color: #74cfae;
@@ -146,7 +155,7 @@
   transition: 0.3s;
 }
 
-.lorem a:hover {
+.Email:hover {
   color: #333;
 }
 
@@ -155,6 +164,7 @@
 }
 
 .section h5 {
+  font-family: 'Lato';
   padding: 70px 0 70px 0;
   text-align: center;
   color: #fff;
@@ -169,6 +179,7 @@
 }
 
 .section__img__box p {
+  font-family: 'Lato';
   color: #fff;
   font-size: 16px;
   text-align: center;
@@ -194,9 +205,10 @@
 }
 
 .sns__icon {
-  padding: 20px 0 20px 0;
-  text-align: center;
   width: 185px;
+  text-align: center;
+  display: block;
+  padding: 20px 0 20px 0;
   font-size: 50px;
   color: #74cfae;
   transition: 0.3s;
@@ -217,5 +229,6 @@
 }
 
 .footer p {
+  font-family: 'Lato';
   color: #fff;
 }
