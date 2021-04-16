@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+body {
+  font-family: 'Lato';
+}
+
+.is-raleway {
+  font-family: 'Raleway'
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -31,7 +39,6 @@
   padding: 14px 12px;
   text-decoration: none;
   transition: 0.3s;
-  font-family: 'Lato';
 }
 
 .contact:hover {
@@ -52,13 +59,12 @@
 }
 
 .theme h1 {
-  font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
 
-.theme h2 {
+.theme p {
   font-family: 'Lato';
   margin-top: 20px;
   font-size: 30px;
@@ -76,33 +82,31 @@
 }
 
 .iphone__inner__right {
+  width: 60%;
   text-align: center;
   color: #fff;
 }
 
 .iphone h2 {
-  font-family: 'Raleway';
   font-size: 24px;
   margin-top: 20px;
 }
 
 .iphone p {
   margin-top: 35px;
-  font-family: 'Lato';
   font-size: 20px;
   line-height: 30px;
 }
 
-.article {
+.work {
   background-color: #f2f2f2;
 }
 
-.article__inner {
+.work__inner {
   padding: 60px 0 70px 0;
 }
 
 .inner h2 {
-  font-family: 'Raleway';
   text-align: center;
   font-size: 24px;
 }
@@ -113,7 +117,11 @@
   display: block;
 }
 
-.article__img {
+.clearfix {
+  margin-top: 40px;
+}
+
+.work__img {
   margin-left: 100px;
   margin-top: 80px;
   float: left;
@@ -121,15 +129,15 @@
   opacity: 0.7;
 }
 
-.article__img:nth-child(-n+3) {
-  margin-top: 40px;
+.work__img:nth-child(-n+3) {
+  margin-top: 0;
 }
 
-.article__img:first-child, .article__img:nth-child(4) {
+.work__img:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.article__img:hover {
+.work__img:hover {
   opacity: 1.0;
 }
 
@@ -141,14 +149,13 @@
 }
 
 .lorem p {
-  font-family: 'Lato';
+  width: 42%;
   text-align: center;
   color: #333;
 }
 
 .Email {
   margin-left: 90px;
-  font-family: 'Lato';
   font-size: 12px;
   padding: 14px 20px;
   background-color: #74cfae;
@@ -170,7 +177,6 @@
 }
 
 .section h2 {
-  font-family: 'Lato';
   text-align: center;
   color: #fff;
   font-size: 24px;
@@ -184,7 +190,6 @@
 }
 
 .section__img__box p {
-  font-family: 'Lato';
   color: #fff;
   font-size: 16px;
   text-align: center;
@@ -235,6 +240,5 @@
 }
 
 .footer p {
-  font-family: 'Lato';
   color: #fff;
 }
