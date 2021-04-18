@@ -24,25 +24,31 @@ body {
 
 .header__inner {
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .icon {
+  float: left;
   font-size: 40px;
 }
 
 .contact {
+  float: right;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
-  text-decoration: none;
   transition: 0.3s;
 }
 
 .contact:hover {
   color: #333;
+}
+
+.hamburger {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
 }
 
 .main {
@@ -117,7 +123,7 @@ body {
   display: block;
 }
 
-.clearfix {
+.work__content {
   margin-top: 40px;
 }
 
@@ -160,7 +166,6 @@ body {
   padding: 14px 20px;
   background-color: #74cfae;
   color: #fff;
-  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -241,4 +246,83 @@ body {
 
 .footer p {
   color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  .iphone__inner {
+    display: block;
+    padding: 50px 0 25px 0;
+  }
+
+  .iphone__inner__left {
+    width: 208px;
+    margin: 0 auto;
+  }
+
+  .iphone__inner__right {
+    margin: 0 auto;
+  }
+
+  .iphone h2 {
+    margin-top: 20px;
+  }
+
+  .iphone p {
+    margin-top: 35px;
+  }
+
+  .work__img {
+    float: none;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .work__img:nth-child(-n+3) {
+    margin: 0 auto;
+  }
+
+  .work__img:nth-child(3n+1) {
+    margin: 80px auto 0 auto;
+  }
+
+  .lorem {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .lorem p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .Email {
+    display: block;
+    width: 52.813px;
+    margin: 40px auto 0 auto;
+  }
+
+  .section__img__box {
+    float: none;
+    margin: 88px auto 0 auto;
+  }
+
+  .section__img__box:first-child {
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
