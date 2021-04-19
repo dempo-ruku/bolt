@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 body {
   font-family: 'Lato';
@@ -17,8 +22,6 @@ body {
   background-color: #fff;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 100;
 }
 
@@ -45,9 +48,12 @@ body {
 }
 
 .hamburger {
+  float: right;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
   display: none;
 }
 
@@ -87,6 +93,10 @@ body {
   justify-content: space-around;
 }
 
+.iphone__inner__left {
+  height: 295px;
+}
+
 .iphone__inner__right {
   width: 60%;
   text-align: center;
@@ -117,11 +127,6 @@ body {
   font-size: 24px;
 }
 
-.clearfix:after {
-  content: "";
-  clear: both;
-  display: block;
-}
 
 .work__content {
   margin-top: 40px;
@@ -133,6 +138,10 @@ body {
   float: left;
   transition: 0.3s;
   opacity: 0.7;
+}
+
+.work__img a {
+  display: block;
 }
 
 .work__img:nth-child(-n+3) {
@@ -314,7 +323,6 @@ body {
   .section__img__box:first-child {
     margin: 0 auto;
   }
-
 }
 
 @media screen and (max-width: 767px) {
@@ -324,5 +332,28 @@ body {
 
   .hamburger {
     display: block;
+  }
+
+  .theme__inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .theme__inner h1 {
+    font-size: 80px;
+  }
+
+  .theme__inner p {
+    font-size: 30px;
+  }
+
+  .sns__inner {
+    padding: 50px 15px;
+    display: block;
+  }
+
+  .sns__icon {
+    width: 100%;
+    margin: 0 15px;
+    box-sizing: border-box;
   }
 }
