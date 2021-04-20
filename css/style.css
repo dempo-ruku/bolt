@@ -20,13 +20,15 @@ body {
 
 .header {
   background-color: #fff;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
 }
 
 .header__inner {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .icon {
@@ -77,7 +79,6 @@ body {
 }
 
 .theme p {
-  font-family: 'Lato';
   margin-top: 20px;
   font-size: 30px;
   color: #c0c0c0;
@@ -93,8 +94,8 @@ body {
   justify-content: space-around;
 }
 
-.iphone__inner__left {
-  height: 295px;
+.iphone__inner__left img{
+  vertical-align: bottom;
 }
 
 .iphone__inner__right {
