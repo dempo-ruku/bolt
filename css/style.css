@@ -20,15 +20,16 @@ body {
 
 .header {
   background-color: #fff;
-}
-
-.header__inner {
   top: 0;
   left: 0;
   position: fixed;
   z-index: 100;
-  padding: 15px;
   box-sizing: border-box;
+  width: 100%;
+}
+
+.header__inner {
+  padding: 15px;
 }
 
 .icon {
@@ -236,8 +237,12 @@ body {
   display: block;
   line-height: 90px;
   font-size: 50px;
-  color: #74cfae;
+  cursor: pointer;
+}
+
+.sns__icon__a {
   transition: 0.3s;
+  color: #74cfae;
 }
 
 .sns__icon:hover {
@@ -262,6 +267,10 @@ body {
 
   .inner {
     width: 97%;
+  }
+
+  .header__inner {
+    width: auto;
   }
 
   .iphone__inner {
@@ -348,13 +357,13 @@ body {
   }
 
   .sns__inner {
-    padding: 50px 15px;
+    padding: 50px 0;
     display: block;
+    box-sizing: border-box;
   }
 
   .sns__icon {
-    width: 100%;
+    width: auto;
     margin: 0 15px;
-    box-sizing: border-box;
   }
 }
