@@ -52,12 +52,35 @@ body {
 
 .hamburger {
   float: right;
+  position: relative;
+  height: 40px;
+  width: 40px;
   padding: 10px;
+  box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box;
   display: none;
+}
+
+.hamburger__line {
+  position: absolute;
+  left: 9px;
+  height: 3px;
+  width: 20px;
+  background-color: #ddd;
+  box-sizing: border-box;
+}
+
+.hamburger__line:nth-of-type(1) {
+  top: 7px;
+}
+
+.hamburger__line:nth-of-type(2) {
+  top: 17px;
+}
+
+.hamburger__line:nth-of-type(3) {
+  top: 27px;
 }
 
 .main {
@@ -238,10 +261,10 @@ body {
   line-height: 90px;
   font-size: 50px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .sns__icon__a {
-  transition: 0.3s;
   color: #74cfae;
 }
 
@@ -293,6 +316,10 @@ body {
 
   .iphone p {
     margin-top: 35px;
+  }
+
+  .work__img img{
+    vertical-align: bottom;
   }
 
   .work__img {
