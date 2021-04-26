@@ -266,6 +266,7 @@ body {
 
 .sns__icon__a {
   color: #74cfae;
+  display: block;
 }
 
 .sns__icon:hover {
@@ -301,7 +302,8 @@ body {
     padding: 50px 0 25px 0;
   }
 
-  .iphone__inner__left {
+  .iphone__inner__left img {
+    display: block;
     width: 208px;
     margin: 0 auto;
   }
@@ -333,7 +335,11 @@ body {
   }
 
   .work__img:nth-child(3n+1) {
-    margin: 80px auto 0 auto;
+    margin: 0 auto;
+  }
+
+  .work__img:nth-child(3n) {
+    margin: 0 auto 80px auto;
   }
 
   .lorem {
